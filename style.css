@@ -62,7 +62,6 @@ body::-webkit-scrollbar-thumb {
     background-size: 75% 1.4px, auto;
 }
 
-
 .navbar-text {
     width: 7%;
     color: rgb(67, 67, 67);
@@ -89,6 +88,27 @@ body::-webkit-scrollbar-thumb {
 
 .navbar .icons a:hover {
     color: #8A4FFF;
+}
+
+@media (max-width:768px) {
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar .nav-item a {
+        background-position: bottom left;
+        margin-bottom: 5px;
+    }
+
+    .navbar .nav-item a:hover {
+        background-size: 25% 2px, auto;
+    }
+
+    .navbar .nav-item .active {
+        background-size: 25% 2px, auto;
+    }
+
 }
 
 /* //////////////////////////SLIDER//////////////////////// */
@@ -119,17 +139,17 @@ body::-webkit-scrollbar-thumb {
     /* border: none; */
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .slider {
         margin-top: 5rem;
     }
 
     .slider .carousel-item img {
-        height: 300px;
+        height: 350px;
     }
 
     .slider .carousel-item h1 {
-        display: none;
+        font-size: 2rem;
     }
 
     .slider .carousel-item .head {
@@ -138,13 +158,12 @@ body::-webkit-scrollbar-thumb {
     }
 
     .slider .carousel-item p {
+        display: none;
         font-size: .7rem;
     }
 
     .slider .carousel-item button {
-        width: 80px;
-        height: 35px;
-        font-size: 6px;
+        font-size: 10px;
         font-weight: 400;
     }
 
@@ -241,22 +260,6 @@ body::-webkit-scrollbar-thumb {
     color: #8A4FFF;
 }
 
-@media (max-width: 500px) {
-
-    .page2 .retail .head {
-        font-size: 2rem;
-    }
-
-    .page2 .retail .content {
-        font-size: 1rem;
-        font-weight: 100;
-    }
-
-    .page2 .store img {
-        object-fit: cover;
-    }
-
-}
 
 /* ///////////////////////////PAGE3/////////////////// */
 
@@ -336,11 +339,12 @@ body::-webkit-scrollbar-thumb {
     color: #8A4FFF;
 }
 
+/* ///////////////////////NAV_BUTTON////////////////////// */
+
 .nav-buttom {
     color: grey;
     background-color: black;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding: 5rem 0px;
 }
 
 .nav-buttom .footer h2 a {
@@ -392,6 +396,12 @@ body::-webkit-scrollbar-thumb {
 
 .nav-buttom .menu-group .menu-group-item a:hover {
     color: white;
+}
+
+@media (max-width:768px) {
+    .nav-buttom {
+        padding: 3rem 0px;
+    }
 }
 
 /* ///////////////////////////////////ABOUT////////////////////////////// */
@@ -490,12 +500,18 @@ body::-webkit-scrollbar-thumb {
     background-color: aliceblue;
 }
 
+.faqs-general-info h1,
+.faqs-about-our-products h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
 .products .front-page-head {
     height: 25rem;
 }
 
 .products .front-page-head h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
 }
 
@@ -507,12 +523,19 @@ body::-webkit-scrollbar-thumb {
     }
 
     .faqs .front-page-head h1 {
-        font-size: 3rem;
+        font-size: 2.3rem;
     }
+
+    .faqs-general-info h1,
+    .faqs-about-our-products h1 {
+        font-size: 2rem;
+    }
+
 }
 
 
 /* /////////////////////////////////////CONTACTS//////////////////////////////////////////// */
+
 .contacts .title {
     height: 25rem;
 }
@@ -522,7 +545,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contacts .contacts-front h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
 }
 
@@ -561,25 +584,9 @@ body::-webkit-scrollbar-thumb {
     color: #8A4FFF;
 }
 
-@media (max-width:600px) {
-
-    .contacts .title h1 {
-        font-size: 2.7rem;
-    }
-
-    .contacts-social h4 {
-        font-size: 1rem;
-    }
-
-    .contacts-social p {
-        font-size: .6rem;
-    }
-
-}
-
 /* ///////////////////////////////////LOGIN/////////////////////// //////////////////////////*/
+
 .login {
-    /* height: 38rem; */
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
@@ -598,7 +605,16 @@ body::-webkit-scrollbar-thumb {
     background-color: #8A4FFF;
 }
 
+@media (max-width:500px) {
+
+    .login {
+        padding-bottom: 0;
+    }
+
+}
+
 /* /////////////////////////////////////////CART///////////////////////////////////////// */
+
 .cart .cart-front {
     background-color: aliceblue;
 }
@@ -608,7 +624,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cart .cart-front .front-page-head h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 900;
 }
 
@@ -618,7 +634,6 @@ body::-webkit-scrollbar-thumb {
 
 .card .cart-item-img img:hover {
     box-shadow: 5px 5px 30px rgba(91, 85, 85, 0.288);
-
 }
 
 .cart .cart-item .card-body .card-title .card-item-name {
@@ -680,4 +695,12 @@ body::-webkit-scrollbar-thumb {
 .cart .offcanvas .checkout:hover {
     background-color: #8A4FFF;
     border: 0;
+}
+
+@media (max-width:500px) {
+
+    .cart .cart-item .card-body .card-title .card-item-name {
+        font-size: 2rem;
+    }
+
 }
